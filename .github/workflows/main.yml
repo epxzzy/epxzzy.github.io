@@ -10,4 +10,4 @@ jobs:
         with:
           find: "parv66"
           replace: "epizzy66"
-          regex: true
+          regex: false
