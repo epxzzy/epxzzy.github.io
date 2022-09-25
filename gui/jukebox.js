@@ -12,7 +12,8 @@ $( document ).ready(function() {
 	//simulate a click
 	if(Cindex !== NaN || Cstamp !== NaN){
 		$('#toggleview').trigger('click');
-		playPause()
+		initPlayer();
+		playPause();
 		console.log('Popup-ed!')
 	} 
 });
@@ -313,8 +314,6 @@ var loadstamp = (function() {
     });
      
   }
-
-  initPlayer();
 });
 $(window).on("beforeunload", function() { 
    	let timestamp = audio.currentTime;
