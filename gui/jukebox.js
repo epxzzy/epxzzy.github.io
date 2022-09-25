@@ -12,7 +12,7 @@ $( document ).ready(function() {
 	//simulate a click
 	if(Cindex !== NaN || Cstamp !== NaN){
 		$('#toggleview').trigger('click');
-		$('#play-pause-button').trigger('click');
+		playPause()
 		console.log('Popup-ed!')
 	} 
 });
