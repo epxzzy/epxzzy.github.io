@@ -320,7 +320,7 @@ $( document ).ready(function() {
 	//simulate a click
 	if(Cindex !== NaN || Cstamp !== NaN){
 		$('#toggleview').trigger('click');
-		setInterval(playPause(),1000);
+		PlayPause();
 		console.log('Popup-ed!')
 	} 
 });
