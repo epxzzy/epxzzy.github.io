@@ -306,7 +306,7 @@ var loadstamp = (function() {
 	if(Cindex !== NaN || Cstamp !== NaN){
 		$('#toggleview').trigger('click');
 		$('#play-pause-button').trigger('click');
-		console.log('Popup-ed!')
+		console.log('Popup-ed!');
 	}
   }
 
