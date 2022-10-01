@@ -298,7 +298,16 @@ var loadstamp = (function() {
     playNextTrackButton.on("click", function () {
       selectTrack(1);
     });
-     
+    $("body").prepend("<div id='jukebox' class='jukehide'><div id='player'><div id='player-track' class='active'><div id='album-name'>Otherside</div><div id='track-name'>lena raine</div><div id='track-time' class='active'><div id='current-time'>00:00</div><div id='track-length'>03:09</div></div><div id='s-area'><div id='ins-time' style='left: 0px; margin-left: 0px; display: none;'>00:00</div><div id='s-hover' style='width: 0px;'></div><div id='seek-bar' style='width: 0px;'></div></div></div><div id='player-content'><div id='album-art' class=''><img src='https://epizy66.github.io/icon/record/record_otherside.png' class='active' id='_1'><img src='https://epizy66.github.io/icon/record/record_pigstep.png' id='_2'><img src='https://epizy66.github.io/icon/record/record_stal.png' id='_3'><img src='https://epizy66.github.io/icon/record/record_wait.png' id='_4'><img src='https://epizy66.github.io/icon/record/record_mall.png' id='_5'><div id='buffer-box'>Buffering ...</div></div><div id='player-controls'><div class='control'><div class='button' id='play-previous'><a>&lt;&lt;</a></div></div><div class='control'><div class='button' id='play-pause-button'><a>||</a></div></div><div class='control'><div class='button' id='play-next'><a>&gt;&gt;</a></div></div></div></div></div><div id='minimize'><button id='toggleview' class='button mcbtn'>!</button></div></div>");
+	$('#toggleview').click(function(){
+		$('#jukebox').toggleClass("jukehide");
+	
+	//simulate a click
+	if(Cindex !== NaN || Cstamp !== NaN){
+		$('#toggleview').trigger('click');
+		$('#play-pause-button').trigger('click');
+		console.log('Popup-ed!')
+	}
   }
 
   initPlayer();
@@ -309,18 +318,4 @@ $(window).on("beforeunload", function() {
 	Cookies.set('timestamp', timestamp , {expires: 7}, {path: '/jukebox'} )
 	Cookies.set('track', trrack , {expires: 7}, {path: '/jukebox'} )
 	console.log('Your Data Has Been Saved!')
-});
-//eee
-$( document ).ready(function() {
-   	$("body").prepend("<div id='jukebox' class='jukehide'><div id='player'><div id='player-track' class='active'><div id='album-name'>Otherside</div><div id='track-name'>lena raine</div><div id='track-time' class='active'><div id='current-time'>00:00</div><div id='track-length'>03:09</div></div><div id='s-area'><div id='ins-time' style='left: 0px; margin-left: 0px; display: none;'>00:00</div><div id='s-hover' style='width: 0px;'></div><div id='seek-bar' style='width: 0px;'></div></div></div><div id='player-content'><div id='album-art' class=''><img src='https://epizy66.github.io/icon/record/record_otherside.png' class='active' id='_1'><img src='https://epizy66.github.io/icon/record/record_pigstep.png' id='_2'><img src='https://epizy66.github.io/icon/record/record_stal.png' id='_3'><img src='https://epizy66.github.io/icon/record/record_wait.png' id='_4'><img src='https://epizy66.github.io/icon/record/record_mall.png' id='_5'><div id='buffer-box'>Buffering ...</div></div><div id='player-controls'><div class='control'><div class='button' id='play-previous'><a>&lt;&lt;</a></div></div><div class='control'><div class='button' id='play-pause-button'><a>||</a></div></div><div class='control'><div class='button' id='play-next'><a>&gt;&gt;</a></div></div></div></div></div><div id='minimize'><button id='toggleview' class='button mcbtn'>!</button></div></div>");
-	$('#toggleview').click(function(){
-		$('#jukebox').toggleClass("jukehide");
-	});
-	
-	//simulate a click
-	if(Cindex !== NaN || Cstamp !== NaN){
-		$('#toggleview').trigger('click');
-		$('#play-pause-button').trigger('click');
-		console.log('Popup-ed!')
-	} 
-});
+}); 
