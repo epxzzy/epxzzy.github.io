@@ -52,7 +52,7 @@ function updateUI(keySequence) {
 }
 function enablemsg(){
             var img = document.createElement('img');
-            img.src = 'https://epizy66.github.io/epizy66.uwu.jpg';
+            img.src = 'https://epxzzy.github.io/epxzzy.uwu.jpg';
             img.id = 'hiddenimage';
             document.getElementById('body').appendChild(img);
             var element = document.getElementById("hiddenimage");
