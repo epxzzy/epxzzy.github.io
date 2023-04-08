@@ -82,24 +82,29 @@ html {
 .boxes {
   display: grid;
   align-content: center;
-  grid-template-columns: repeat(9, calc(var(--slot-size) + 4px));
-  grid-template-rows: repeat(6, calc(var(--slot-size) + 4px));
+  grid-template-columns: repeat(9, calc(var(--slot-size) + 8px));
+  grid-auto-rows: calc(var(--slot-size) + 8px);
+  grid-gap: 0px;
   cursor: default;
 }
 
 .boxes2 {
   display: grid;
-  grid-template-columns: repeat(9, calc(var(--slot-size) + 4px));
-  grid-template-rows: repeat(3, calc(var(--slot-size) + 4px));
-  cursor: default;
+  align-content: center;
+  grid-template-columns: repeat(9, calc(var(--slot-size) + 8px));
+  grid-auto-rows: calc(var(--slot-size) + 8px);
+  grid-gap: 0px;
   margin-bottom: 6px;
+  cursor: default;
 }
 
 .boxes3 {
   display: grid;
-  grid-template-columns: repeat(9, calc(var(--slot-size) + 4px));
+  align-content: center;
+  grid-template-columns: repeat(9, calc(var(--slot-size) + 8px));
+  grid-auto-rows: calc(var(--slot-size) + 8px);
+  grid-gap: 0px;
   cursor: default;
-  grid-template-rows: repeat(1, calc(var(--slot-size) + 4px))
 }
 
 .boxes,
