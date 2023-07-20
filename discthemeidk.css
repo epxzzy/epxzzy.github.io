@@ -5,8 +5,9 @@
 
 :root {
     --var-background: url(./banner.jpg) ;
-    --var-accent: rgba(19, 0, 48, 0.3);
+    --var-accent: #130031;
     --var-black1: rgb(0 0 0 / 55%);
+--var-chat-bubbles-background: rgba(19, 0, 48, 0.3);
     --var-black2: rgb(0 0 0 / 65%);
     --var-notification: #CF1500;
     --var-popout-color: rgba(14, 4, 22, 0.5);
