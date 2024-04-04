@@ -1,0 +1,29 @@
+.currency {
+    width: 29px;
+    height: 29px;
+    background-image: url("https://epxzzy.github.io/gui/images/prototype_currency.png");
+    background-size: cover;
+    z-index: 2;
+    display: block;
+}
+/* currency*/
+.copperplusplus {
+    background-image: url("https://epxzzy.github.io/creations/icons/cog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 29px;
+    display: block;
+    cursor: default;
+}
+/* copper++ addon*/
+.papple {
+    background-image: url("https://epxzzy.github.io/creations/icons/pappleicon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 29px;
+    display: block;
+    cursor: default;
+}
+/* placeable apples addon*/
