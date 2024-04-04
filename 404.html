@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://epxzzy.github.io/style.css">
+    <title>Error: page does not exists</title>
+    <script src="https://epxzzy.github.io/gui/mcbtnclick.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+<body>
+<button class="button mcbtn" id="fofbtnerror" style="display: none" onclick="location.href = 'https://epxzzy.github.io/404/'">press this if you see this</button>
+  <script>
+  window.onload=function(){
+    location.href = "https://epxzzy.github.io/404/";
+    setTimeout(function(){
+      var FoFbtn = document.querySelector('#fofbtnerror');
+      FoFbtn.style.display="block";
+      console.log("offline declared!");
+    },5000);
+  }
+  </script>
+</body>
+</html>
